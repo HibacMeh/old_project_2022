@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+.text-center {
+ text-align: center;
+ display: block;
+
+}
+
+.logo {
+   
+    margin: 1rem 0 0.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+time {
+    font-weight: bold;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 1000px;
+    max-width: 100%;
+}
+
+
+
+/* #nav# */
+
+
+nav {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin: 1rem 0;
+    display: block;
+   
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.content{
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+    }
+
+.rows{
+
+    display: flex;
+    flex: 1;
+}
+ 
+.col{
+  width: 33%;
+  padding: 2rem;
+
+}
+ 
+
+img {
+    max-width: 100%;
+}
+
+h1{
+    font-size: 1.17rem;
+    font-weight: bold;
+}
+
+.col p{
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.col:not(:last-child)  {
+  border-right: 2px solid #c4c4c4;
+}
+
+
+/* RWD  */
+
+@media screen and (max-width: 690px){
+   
+    .rows{
+        display: block;
+    }
+    .col{
+        width: auto;    
+    }
+
+
+    
+
+}
+    
+}
