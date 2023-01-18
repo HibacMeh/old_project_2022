@@ -1,0 +1,148 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    color:antiquewhite;
+    font-family: 'Roboto', sans-serif; 
+    margin: 0%;
+    
+}
+.container {
+    padding: 0 2rem;
+    margin: 0 auto ;
+    max-width: 100%;
+    width: 1000px;
+    }
+
+header{ 
+    background-image: url(/car-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 100px);
+    
+}
+
+
+    .content {
+        margin: auto ;
+        font-size: 2rem;
+        max-width: 100%;
+        /* width: 1000px; */
+    }
+
+    .content h1 {
+        color:#00c2ff;
+        font-family: monospace;
+        
+    }
+
+
+
+nav  {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+nav .logo{
+    font-size: 2rem;
+
+}
+
+ nav ul{
+     display: flex;
+     list-style-type: none;
+     padding: 0%;
+     
+ }
+  
+
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+}
+
+.highlighted  {
+      background-color: #00c2ff;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: .5rem;
+
+}
+
+
+.selected {
+    font-weight: bold;
+}
+
+
+footer{
+    min-height:  100px;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+   
+
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0%;
+}
+footer strong {
+    color: #00c2ff;
+}
+
+footer p {
+    margin: 0%;
+   
+}
+  
+/* ###making it responsive### */
+
+@media only screen and (max-width: 700px){
+ 
+    nav ul{
+        flex-direction: column;
+    
+    }
+
+ ul .highlighted{
+     display: none;
+ }
+
+ .container {
+   font-size: 1rem;
+
+   
+ }
+
+
+footer ul{
+    flex-direction: column;
+   text-align: center;
+   
+
+}
+  
+    
+
+
+}
